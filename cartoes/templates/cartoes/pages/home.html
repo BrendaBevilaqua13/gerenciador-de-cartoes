@@ -2,6 +2,12 @@
 {% include 'cartoes/partials/head.html'%}
 <body>
 {% include 'cartoes/partials/header.html'%}
-{% include 'cartoes/partials/cartoes.html'%}
+
+
+<h1>--- Cartões da {{pessoa}} ---</h1>
+
+{% for cartao in cartoes %}
+<h1>-- {{cartao.nome}} --</h1>
+{% endfor %}
 
 </body>
